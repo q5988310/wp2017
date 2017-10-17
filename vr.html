@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VR</title>  
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     
+      <a-sky color="#ECECEC"></a-sky>
+   
+        
+        
+         <a-assets>
+      
+            <img id="fall" src="http://i.imgur.com/Q89wwdR.jpg">    
+             <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        </a-assets>
+        
+     
+        
+          <a-image id="stereoscopic-fall-collection-text" src="#fall"  
+                      height="1" position="-0.5 2 -3" scale="1 1 1" >
+       
+     
+      </a-image>
+        
+        
+        <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"></a-plane>
+    <a-light type="ambient" color="#445000"></a-light>
+    <a-light type="point" intensity="3" position="2 9 4"></a-light>
+        
+       
+        
+    </a-scene>
+  </body>
+</html>
